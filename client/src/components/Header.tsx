@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import cascadeLogo from "@assets/IMG_20250326_154818-removebg-preview.png";
 
 const NavLink = ({ href, children }: { href: string, children: React.ReactNode }) => {
   const [location] = useLocation();
@@ -30,7 +31,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#0D9488] to-[#3B82F6] rounded-md"></div>
+                <img src={cascadeLogo} alt="Cascade Space Logo" className="h-10" />
                 <span className="text-xl font-bold text-[#0F172A]">Cascade Space</span>
               </a>
             </Link>
@@ -41,7 +42,6 @@ const Header = () => {
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
             <NavLink href="/services">Services</NavLink>
-            <NavLink href="/projects">Projects</NavLink>
             <NavLink href="/contact">Contact</NavLink>
             <Link href="/contact">
               <Button className="ml-2 px-4 py-2 text-sm font-medium text-white bg-[#3B82F6] hover:bg-[#1E40AF] rounded-md transition-colors">
@@ -83,11 +83,6 @@ const Header = () => {
             <Link href="/services">
               <a className="block py-2 px-3 text-sm font-medium text-[#475569] rounded-md hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
                 Services
-              </a>
-            </Link>
-            <Link href="/projects">
-              <a className="block py-2 px-3 text-sm font-medium text-[#475569] rounded-md hover:bg-gray-100" onClick={() => setMobileMenuOpen(false)}>
-                Projects
               </a>
             </Link>
             <Link href="/contact">

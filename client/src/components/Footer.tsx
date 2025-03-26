@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import cascadeLogo from "@assets/IMG_20250326_154818-removebg-preview.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-gradient-to-r from-[#0D9488] to-[#3B82F6] rounded-md"></div>
+              <img src={cascadeLogo} alt="Cascade Space Logo" className="h-8" />
               <span className="text-xl font-bold">Cascade Space</span>
             </div>
             <p className="text-gray-400 mb-6">
@@ -42,7 +43,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><Link href="/about"><a className="text-gray-400 hover:text-white transition-colors">About Us</a></Link></li>
               <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">Services</a></Link></li>
-              <li><Link href="/projects"><a className="text-gray-400 hover:text-white transition-colors">Projects</a></Link></li>
+
               <li><Link href="/contact"><a className="text-gray-400 hover:text-white transition-colors">Contact</a></Link></li>
               <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Careers</a></Link></li>
             </ul>

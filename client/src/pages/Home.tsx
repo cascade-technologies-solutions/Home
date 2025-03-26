@@ -2,7 +2,6 @@ import HeroSection from "@/components/HeroSection";
 import FocusAreas from "@/components/FocusAreas";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
-import ProjectsSection from "@/components/ProjectsSection";
 import CTASection from "@/components/CTASection";
 import ContactForm from "@/components/ContactForm";
 import ContactDetails from "@/components/ContactDetails";
@@ -21,7 +20,6 @@ const Home = () => {
       <FocusAreas />
       <AboutSection />
       <ServicesSection />
-      <ProjectsSection />
       <CTASection />
       <section id="contact" className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
