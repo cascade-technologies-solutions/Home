@@ -29,13 +29,11 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="flex items-center space-x-2">
-                <div className="bg-white rounded-full p-1">
-                  <img src={cascadeLogo} alt="Cascade Space Logo" className="h-10" />
-                </div>
-              </a>
-            </Link>
+            <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.location.href = '/'}>
+              <div className="bg-white rounded-full p-1">
+                <img src={cascadeLogo} alt="Cascade Space Logo" className="h-10" />
+              </div>
+            </div>
           </div>
           
           {/* Desktop Navigation */}
@@ -54,10 +52,12 @@ const Header = () => {
           {/* Mobile menu button */}
           <div className="md:hidden">
             <Button 
-              variant="ghost" 
+              variant={mobileMenuOpen ? "default" : "ghost"} 
               size="icon" 
               onClick={toggleMobileMenu}
-              className="text-white hover:text-gray-200 focus:outline-none"
+              className={mobileMenuOpen ? 
+                "bg-white text-[#0F172A] hover:bg-gray-200 hover:text-[#0F172A]" : 
+                "text-white hover:text-gray-200 focus:outline-none"}
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />

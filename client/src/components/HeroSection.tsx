@@ -4,13 +4,18 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section className="bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white overflow-hidden">
+    <section className="bg-gradient-to-r from-[#0F172A] to-[#1E293B] text-white overflow-hidden relative">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" 
+           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80')" }}>
+      </div>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
         {/* Decorative elements */}
         <div className="absolute top-20 right-10 w-64 h-64 bg-[#60A5FA]/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 left-10 w-80 h-80 bg-[#14B8A6]/10 rounded-full blur-3xl"></div>
         
-        <div className="relative z-10 max-w-4xl">
+        <div className="relative z-10 max-w-4xl mx-auto text-center lg:text-left lg:mx-0">
           <motion.h1 
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -23,7 +28,7 @@ const HeroSection = () => {
             </span>
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl"
+            className="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -31,18 +36,18 @@ const HeroSection = () => {
             Cascade Space builds smart digital solutions—software, apps, websites, and AI-driven platforms—to enhance productivity, efficiency, and scalability.
           </motion.p>
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start w-full sm:w-auto"
+            className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start w-full sm:w-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link href="/contact" className="flex justify-center sm:justify-start">
-              <Button className="w-full sm:w-auto px-8 py-6 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-base h-auto">
+            <Link href="/contact" className="flex justify-center">
+              <Button className="w-full sm:w-auto px-5 py-2 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-sm h-auto">
                 Get Started
               </Button>
             </Link>
-            <Link href="/services" className="flex justify-center sm:justify-start">
-              <Button variant="outline" className="w-full sm:w-auto px-8 py-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-base h-auto">
+            <Link href="/services" className="flex justify-center">
+              <Button variant="outline" className="w-full sm:w-auto px-5 py-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-sm h-auto">
                 Explore Services
               </Button>
             </Link>
