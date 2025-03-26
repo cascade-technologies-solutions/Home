@@ -71,31 +71,41 @@ const Header = () => {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden pb-3 px-2 space-y-1">
-            <Link href="/">
-              <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>
-                Home
-              </a>
-            </Link>
-            <Link href="/about">
-              <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>
-                About
-              </a>
-            </Link>
-            <Link href="/services">
-              <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>
-                Services
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>
-                Contact
-              </a>
-            </Link>
-            <Link href="/contact">
-              <a className="block py-2 px-3 mt-2 text-sm font-medium text-white bg-[#3B82F6] rounded-md hover:bg-[#1E40AF]" onClick={() => setMobileMenuOpen(false)}>
-                Get Started
-              </a>
-            </Link>
+            <div onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/">
+                <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10">
+                  Home
+                </a>
+              </Link>
+            </div>
+            <div onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/about">
+                <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10">
+                  About
+                </a>
+              </Link>
+            </div>
+            <div onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/services">
+                <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10">
+                  Services
+                </a>
+              </Link>
+            </div>
+            <div onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact">
+                <a className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10">
+                  Contact
+                </a>
+              </Link>
+            </div>
+            <div className="flex justify-center mt-2" onClick={() => setMobileMenuOpen(false)}>
+              <Link href="/contact">
+                <a className="block w-full py-2 px-3 text-center text-sm font-medium text-white bg-[#3B82F6] rounded-md hover:bg-[#1E40AF]">
+                  Get Started
+                </a>
+              </Link>
+            </div>
           </div>
         )}
       </div>

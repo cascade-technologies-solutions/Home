@@ -18,13 +18,13 @@ const CTASection = () => {
             Let's collaborate to create innovative solutions that drive growth, efficiency, and success for your organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button className="px-8 py-6 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-base h-auto">
+            <Link href="/contact" className="flex justify-center w-full sm:w-auto">
+              <Button className="w-full sm:w-auto px-8 py-6 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-base h-auto">
                 Get in Touch
               </Button>
             </Link>
-            <Link href="/services">
-              <Button variant="outline" className="px-8 py-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-base h-auto">
+            <Link href="/services" className="flex justify-center w-full sm:w-auto">
+              <Button variant="outline" className="w-full sm:w-auto px-8 py-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-base h-auto">
                 Explore Services
               </Button>
             </Link>

@@ -31,18 +31,18 @@ const HeroSection = () => {
             Cascade Space builds smart digital solutions—software, apps, websites, and AI-driven platforms—to enhance productivity, efficiency, and scalability.
           </motion.p>
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start w-full sm:w-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link href="/contact">
-              <Button className="px-8 py-6 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-base h-auto">
+            <Link href="/contact" className="flex justify-center sm:justify-start">
+              <Button className="w-full sm:w-auto px-8 py-6 bg-[#3B82F6] hover:bg-[#1E40AF] rounded-lg font-medium text-white transition-all shadow-lg hover:shadow-xl text-base h-auto">
                 Get Started
               </Button>
             </Link>
-            <Link href="/services">
-              <Button variant="outline" className="px-8 py-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-base h-auto">
+            <Link href="/services" className="flex justify-center sm:justify-start">
+              <Button variant="outline" className="w-full sm:w-auto px-8 py-6 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 rounded-lg font-medium text-white transition-all text-base h-auto">
                 Explore Services
               </Button>
             </Link>
