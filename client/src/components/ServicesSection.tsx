@@ -20,15 +20,15 @@ const ServiceCard = ({ imageUrl, title, description, features, index }: ServiceC
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div className="h-48 bg-[#1E293B] relative overflow-hidden">
+      <div className="h-56 bg-[#1E293B] relative overflow-hidden">
         <img 
           src={imageUrl} 
           alt={title} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/50 to-transparent"></div>
         <div className="absolute bottom-4 left-4 text-white">
-          <h3 className="text-xl font-semibold">{title}</h3>
+          <h3 className="text-xl font-semibold text-shadow">{title}</h3>
         </div>
       </div>
       <div className="p-6">
