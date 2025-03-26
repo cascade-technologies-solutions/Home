@@ -10,7 +10,7 @@ const NavLink = ({ href, children }: { href: string, children: React.ReactNode }
   
   return (
     <Link href={href}>
-      <div className={`text-sm font-medium ${isActive ? "text-[#3B82F6]" : "text-white hover:text-[#3B82F6]"} transition-colors cursor-pointer`}>
+      <div className={`text-base md:text-lg font-medium ${isActive ? "text-[#3B82F6]" : "text-white hover:text-[#3B82F6]"} transition-colors cursor-pointer`}>
         {children}
       </div>
     </Link>
@@ -73,35 +73,35 @@ const Header = () => {
           <div className="md:hidden pb-3 px-2 space-y-1">
             <div onClick={() => setMobileMenuOpen(false)}>
               <Link href="/">
-                <div className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
+                <div className="block py-2 px-3 text-lg font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
                   Home
                 </div>
               </Link>
             </div>
             <div onClick={() => setMobileMenuOpen(false)}>
               <Link href="/about">
-                <div className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
+                <div className="block py-2 px-3 text-lg font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
                   About
                 </div>
               </Link>
             </div>
             <div onClick={() => setMobileMenuOpen(false)}>
               <Link href="/services">
-                <div className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
+                <div className="block py-2 px-3 text-lg font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
                   Services
                 </div>
               </Link>
             </div>
             <div onClick={() => setMobileMenuOpen(false)}>
               <Link href="/contact">
-                <div className="block py-2 px-3 text-sm font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
+                <div className="block py-2 px-3 text-lg font-medium text-white rounded-md hover:bg-white/10 cursor-pointer">
                   Contact
                 </div>
               </Link>
             </div>
             <div className="flex justify-center mt-2" onClick={() => setMobileMenuOpen(false)}>
               <Link href="/contact">
-                <div className="block w-full py-2 px-3 text-center text-sm font-medium text-white bg-[#3B82F6] rounded-md hover:bg-[#1E40AF] cursor-pointer">
+                <div className="block w-full py-2 px-3 text-center text-lg font-medium text-white bg-[#3B82F6] rounded-md hover:bg-[#1E40AF] cursor-pointer">
                   Get Started
                 </div>
               </Link>

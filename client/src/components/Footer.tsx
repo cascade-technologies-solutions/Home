@@ -43,32 +43,31 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Company</h4>
             <ul className="space-y-3">
-              <li><Link href="/about"><a className="text-gray-400 hover:text-white transition-colors">About Us</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">Services</a></Link></li>
-
-              <li><Link href="/contact"><a className="text-gray-400 hover:text-white transition-colors">Contact</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Careers</a></Link></li>
+              <li><Link href="/about"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">About Us</div></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Services</div></Link></li>
+              <li><Link href="/contact"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Contact</div></Link></li>
+              <li><Link href="/"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Careers</div></Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">Software Development</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">AI & Machine Learning</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">Digital Transformation</a></Link></li>
-              <li><Link href="/services"><a className="text-gray-400 hover:text-white transition-colors">Startup Ecosystem</a></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Software Development</div></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">AI & Machine Learning</div></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">UI/UX Design</div></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Digital Transformation</div></Link></li>
+              <li><Link href="/services"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Startup Ecosystem</div></Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-6">Legal</h4>
             <ul className="space-y-3">
-              <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Terms of Service</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></Link></li>
-              <li><Link href="/"><a className="text-gray-400 hover:text-white transition-colors">Data Protection</a></Link></li>
+              <li><Link href="/"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Privacy Policy</div></Link></li>
+              <li><Link href="/"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Terms of Service</div></Link></li>
+              <li><Link href="/"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Cookie Policy</div></Link></li>
+              <li><Link href="/"><div className="text-gray-400 hover:text-white transition-colors text-base md:text-lg cursor-pointer">Data Protection</div></Link></li>
             </ul>
           </div>
         </div>
@@ -78,10 +77,10 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               &copy; {new Date().getFullYear()} Cascade Space. All rights reserved.
             </p>
-            <div className="mt-4 md:mt-0">
-              <Link href="/"><a className="text-xs text-gray-500 hover:text-gray-400 mr-4">Privacy</a></Link>
-              <Link href="/"><a className="text-xs text-gray-500 hover:text-gray-400 mr-4">Terms</a></Link>
-              <Link href="/"><a className="text-xs text-gray-500 hover:text-gray-400">Sitemap</a></Link>
+            <div className="mt-4 md:mt-0 flex space-x-4">
+              <Link href="/"><div className="text-sm text-gray-500 hover:text-gray-400 cursor-pointer">Privacy</div></Link>
+              <Link href="/"><div className="text-sm text-gray-500 hover:text-gray-400 cursor-pointer">Terms</div></Link>
+              <Link href="/"><div className="text-sm text-gray-500 hover:text-gray-400 cursor-pointer">Sitemap</div></Link>
             </div>
           </div>
         </div>
