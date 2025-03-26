@@ -31,7 +31,9 @@ const Header = () => {
           <div className="flex items-center">
             <Link href="/">
               <a className="flex items-center space-x-2">
-                <img src={cascadeLogo} alt="Cascade Space Logo" className="h-10" />
+                <div className="bg-white rounded-full p-1">
+                  <img src={cascadeLogo} alt="Cascade Space Logo" className="h-10" />
+                </div>
               </a>
             </Link>
           </div>

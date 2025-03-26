@@ -8,7 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <img src={cascadeLogo} alt="Cascade Space Logo" className="h-8" />
+              <div className="bg-white rounded-full p-1">
+                <img src={cascadeLogo} alt="Cascade Space Logo" className="h-8" />
+              </div>
               <span className="text-xl font-bold">Cascade Space</span>
             </div>
             <p className="text-gray-400 mb-6">
