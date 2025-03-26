@@ -21,9 +21,13 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <ContactForm />
-            <ContactDetails />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 px-4 sm:px-0">
+            <div className="order-2 lg:order-1">
+              <ContactForm />
+            </div>
+            <div className="order-1 lg:order-2">
+              <ContactDetails />
+            </div>
           </div>
         </div>
       </section>

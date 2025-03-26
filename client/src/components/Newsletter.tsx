@@ -73,29 +73,33 @@ const Newsletter = () => {
             
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col sm:flex-row gap-3">
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem className="flex-grow">
-                      <FormControl>
-                        <Input 
-                          placeholder="Enter your email" 
-                          className="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] outline-none transition-all" 
-                          {...field} 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <Button 
-                  type="submit" 
-                  disabled={isSubmitting}
-                  className="px-6 py-3 bg-[#3B82F6] hover:bg-[#1E40AF] text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all"
-                >
-                  {isSubmitting ? "Subscribing..." : "Subscribe"}
-                </Button>
+                <div className="w-full">
+                  <FormField
+                    control={form.control}
+                    name="email"
+                    render={({ field }) => (
+                      <FormItem className="flex-grow">
+                        <FormControl>
+                          <Input 
+                            placeholder="Enter your email" 
+                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3B82F6] focus:border-[#3B82F6] outline-none transition-all" 
+                            {...field} 
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                </div>
+                <div className="flex justify-center sm:justify-start">
+                  <Button 
+                    type="submit" 
+                    disabled={isSubmitting}
+                    className="w-full sm:w-auto px-6 py-3 bg-[#3B82F6] hover:bg-[#1E40AF] text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all"
+                  >
+                    {isSubmitting ? "Subscribing..." : "Subscribe"}
+                  </Button>
+                </div>
               </form>
             </Form>
             

@@ -115,11 +115,13 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <Link href="/services">
-            <Button className="px-6 py-3 text-white bg-[#3B82F6] hover:bg-[#1E40AF] rounded-md shadow-md hover:shadow-lg transition-all">
-              View All Services
-            </Button>
-          </Link>
+          <div className="flex justify-center">
+            <Link href="/services" className="w-full sm:w-auto flex justify-center">
+              <Button className="w-full sm:w-auto px-6 py-3 text-white bg-[#3B82F6] hover:bg-[#1E40AF] rounded-md shadow-md hover:shadow-lg transition-all">
+                View All Services
+              </Button>
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>
